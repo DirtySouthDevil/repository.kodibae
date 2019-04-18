@@ -20,7 +20,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2018.08.28" provider-name="Bugatsinho">
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2019.03.23" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="1.1.0"/>
@@ -41,6 +41,42 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.2.6" provider-name="doko">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+
+[B]0.2.6:[/B]
+- Fix for when the chapter popup has blank labels.
+
+[B]0.2.5:[/B]
+- Added backup host method.
+- Added dialog for rare multi-chapter episodes.
+- Added special order and thumbs to Latest Releases area (see Settings).
+
+[B]0.2.4:[/B]
+- Update to website changes (media playing).
+        </news>
+        <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]WatchCartoonOnline.io[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on by doko.
+        </description>
+        <platform lang="en">all</platform>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
     </extension>
 </addon>
 
@@ -184,7 +220,7 @@
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.1.67"
+       version="1.1.74"
        provider-name="Whitecream, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -208,15 +244,14 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.1.67[/B]
-Fixed: WatchXXXFree
-Fixed: YesPornPlease
-Fixed: ParadiseHill
+        <news>[B]Version 1.1.74[/B]
+Fixed: Beeg
+Fixed: K18
 </news>
     </extension>
 </addon>
 
-<addon id="plugin.video.releaseBB" version="1.7.3.1" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+<addon id="plugin.video.releaseBB" version="1.7.5" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -238,34 +273,13 @@ Fixed: ParadiseHill
     <website>https://bugatsinho.github.io/</website>
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
-    <news>+ [B][COLOR lime]1.7.3[/B][/COLOR] [COLOR gold](08-02-2019)[/COLOR]
-- New Artwork credits to @jokstergfx
-- Add Recommended Movies</news>
+    <news>+ [B][COLOR lime]1.7.5[/B][/COLOR] [COLOR gold](20-03-2019)[/COLOR]
+- Update cfscrape.py</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
-</addon>
-
-<addon id="plugin.video.theyidrh" version="6.1.2" name="Release [COLOR powderblue][B]HUB[/B][/COLOR]" provider-name="@MrEntertainRepo">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.TheYid.common" version="0.1.1"/>
-        <import addon="script.module.urlresolver"  version="2.1.2"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Release [B][I][COLOR powderblue]HUB[/COLOR][/B][/I]</summary>
-        <description>Release [B][I][COLOR powderblue]HUB[/COLOR][/B][/I] 30+ scene release sites all in one place.... [COLOR lime][B]SUPER ADDON[/B][/COLOR] [COLOR red][B][I]YOU will need a debrid premium account to get the best out of this addon. NOT FOR NOOBS[/B][/I][/COLOR] [COLOR mintcream][B][I]For more info go to @MrEntertainRepo[/B][/I][/COLOR] PLEASE REMOVE THIS ADDON FROM BEST OF YOUTUBE VIDEOS AND ADDON OF THE MONTH BALLSHIT BLOG POSTS - SHOW SOME RESPECT AND ASK THE ADDED DEV IF THEY WOULD LIKE THE ADDON TO BE IN VIDS OR BLOGS.</description>
-        <platform>all</platform>
-	 <forum> </forum>
-	 <website> </website>
-        <disclaimer lang="en">[COLOR red][B][I] Mr Entertainment. [/B][/I][/COLOR] [COLOR red][B][I]YOU will need a debrid premium account for this addon[/B][/I][/COLOR]</disclaimer>
-    </extension>
 </addon>
 
 <addon id="plugin.program.indigo" version="4.0.12" name="Indigo" provider-name="tvaddons">
@@ -288,7 +302,7 @@ Fixed: ParadiseHill
     </extension>
 </addon>
 
-<addon id="plugin.video.kiddo" name="[B][COLORdarkgoldenrod]Kid[/COLOR][COLORburlywood]do[/COLOR][/B]" version="4.0.1.1" provider-name="[COLOR gold][B][Brackets][/B][/COLOR]">
+<addon id="plugin.video.kiddo" name="[B][COLORdarkgoldenrod]Kid[/COLOR][COLORburlywood]do[/COLOR][/B]" version="4.0.1.2" provider-name="[COLOR gold][B][Brackets][/B][/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -307,9 +321,9 @@ Fixed: ParadiseHill
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.arrakis" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Special thanks to [COLORgold]NuMbErS[/COLOR] who wrote all the xmls in this Addon giving me the start to maintain one of the best kids addon to date. True story.</summary>
+        <summary lang="en">Special thanks to [COLORgold]NuMbErS[/COLOR]</summary>
         <description lang="en">[COLORgold]PG - Parental Guidance Suggested - Some Mild Rude Humor. Some Material may not Be Suitable for Children.[/COLOR][CR]The author is not responsible for the use of this addon and does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]The Search process is the same as a search engine with no data actual hosted by the developer.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <platform>all</platform>
@@ -324,37 +338,6 @@ Fixed: ParadiseHill
         <screenshot>resources/media/screenshot-03.png</screenshot>
         </assets>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-    </extension>
-</addon>
-
-<addon id="plugin.video.masteraniredux" name="Masterani Redux" version="1.2.2" provider-name="Wilson Magic">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.resolveurl" version="5.0.13" />
-        <import addon="script.module.pyxbmct" />
-		<import addon="script.module.requests"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Masterani Redux</summary>
-        <description lang="en">Play Anime from Masterani.me. Please note that this addon is not developed by the authors of Masterani.[CR][CR]This content does not support the original creators of the anime you can view, if you wish to support the original creators, then please use Crunchyroll, Funimation or other similar services.[CR][CR]アニメは凄いです!</description>
-        <disclaimer>Addon by Alleidun, SirTakoyaki and Wilson Magic. The author does not host or distribute any of the content displayed by this addon.</disclaimer>
-        <platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum>https://www.reddit.com/r/Addons4Kodi/</forum>
-		<website>https://www.masterani.me/</website>
-		<source>https://www.masterani.me/</source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-    	</assets>
     </extension>
 </addon>
 
@@ -421,38 +404,13 @@ Fixed: ParadiseHill
 	</extension>
 </addon>
 
-<addon id="script.module.civitasscrapers" name="Civitas Scrapers Module" version="0.0.5.12a" provider-name="CivitasAdmin">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.beautifulsoup4"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
-        <provides>executable</provides>
-    </extension>
-        <extension point="xbmc.addon.metadata">
-            <platform>all</platform>
-            <summary lang="en">Civitas Scrapers Module</summary>
-            <description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart></fanart>
-    </assets>
-    <news></news>
-    </extension>
-</addon>
-
-<addon id="plugin.video.realizer" version="2019.02.17" name="Realizer" provider-name="aenema">
+<addon id="plugin.video.realizer" version="2019.03.29" name="Realizer" provider-name="aenema">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.metalibrary" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.feedparser" />
-		<import addon="repository.aenemapy" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
@@ -550,7 +508,7 @@ Fixed: ParadiseHill
     </extension>
 </addon>
 
-<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.83" provider-name="iwannabelikemike">
+<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.84" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
@@ -588,14 +546,12 @@ Fixed: ParadiseHill
   </extension>
 </addon>
 
-<addon id="plugin.video.premiumizer" version="2019.02.17" name="Premiumizer" provider-name="aenema">
+<addon id="plugin.video.premiumizer" version="2019.04.12" name="Premiumizer" provider-name="aenema">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.metalibrary" />
 		<import addon="script.module.requests" />
-		<import addon="repository.aenemapy" />
-
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
@@ -619,7 +575,36 @@ Fixed: ParadiseHill
 	</extension>
 </addon>
 
-<addon id="script.module.exodus" name="Exodus Module" version="3.1.6" provider-name="Exodus">
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.5.2" provider-name="Bugatsinho">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="plugin.video.f4mTester" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sport365 originally made by GalAnonim</summary>
+    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>https://bugatsinho.github.io</website>
+    <twitter>@bugatsinho</twitter>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.png</fanart>
+  </assets>
+  <news>2.5.2 23-03-2019
+- add inputstream option for playback(settings)
+- add alternatives domains and language support
+      (https://github.com/bugatsinho/bugatsinho.github.io/pull/15)</news>
+  </extension>
+</addon>
+
+<addon id="script.module.exodus" name="Exodus Module" version="3.1.8" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
@@ -674,7 +659,7 @@ Fixed: ParadiseHill
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.27" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.28" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -844,7 +829,7 @@ Custom Provider module now uses Zfile module to accomodate zipfile module bug on
 	</extension>
 </addon>
 
-<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.5" provider-name="Team Universal">
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.6" provider-name="Team Universal">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -920,7 +905,7 @@ Custom Provider module now uses Zfile module to accomodate zipfile module bug on
 	</extension>
 </addon>
 
-<addon id="context.seren" version="0.6" name="Seren - Global Context Menu Items" provider-name="Nixgates">
+<addon id="context.seren" version="0.8" name="Seren - Global Context Menu Items" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 		<import addon="plugin.video.seren" version="0.1.22" />
@@ -968,6 +953,12 @@ Custom Provider module now uses Zfile module to accomodate zipfile module bug on
 			<fanart>temp-fanart.png</fanart>
 		</assets>
 		<news>
+Changelog 0.8:
+Fixed missing season number
+
+Changelog 0.7
+Updated Trakt Manager to support Seasons
+
 Changelog Version 0.5:
 Fixed Source Select (Changed built-in function to PlayMedia)
 
@@ -1121,6 +1112,284 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="plugin.video.seren" version="0.2.15" name="Seren" provider-name="Nixgates">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="script.module.addon.signals" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="seren.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Seren - This Addon is currently in beta. Please be aware there may be bugs present</summary>
+		<description lang="en">
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon takes no responsibility for any 3rd party intergration or modification of this software, please ensure your use of this software abides by your local and insterstate laws.</disclaimer>
+		<assets>
+			<icon>temp-icon.png</icon>
+			<fanart>temp-fanart.png</fanart>
+		</assets>
+		<news>
+Changelog 0.2.15:
+Fixed genre capitalization
+Fixed clear meta dialog text
+
+Changelog 0.2.14:
+Added ability to clear metadata for individual items using Trakt Manager
+
+Changelog 0.2.13:
+Fixed Movies being marked as un-aired
+Fixed Movie Release Date Meta Information
+Fixed Unaired episodes showing as aired
+
+Changelog 0.2.12:
+Fixed Next menu item for show Years
+Re-added ability for Seren to display un-aired episodes if Hide Unaired is unchecked
+Added automatic checks and prompt for Seren updates
+Force check for episodes in season episode menus if hide unaired is disabled
+Stopped trakt sync from attempting to update user information if user is not authorised with trakt
+
+Changelog 0.2.11:
+Fixed Playable flag for mixedEpisodeList
+Fixed Context menu not showing on mixed episode lists
+
+Changelog 0.2.10:
+Fixed issue with incorrect episode playing.
+
+Changelog 0.2.9:
+Added try except for AttributeError on getTorrents/getHoster functions to account for change of variable type
+Fixed Attribute Issue causing cache assist to fail
+Re-added smartplay workaround (fixes playback failed message even when playback was successful)
+
+Changelog 0.2.8:
+Fixed issue with getDebridDuplicates sources crashing getSources Module
+Fixed Pre-emptive termination
+Fixed extra information crashing trakt sync
+
+Changelog 0.2.7:
+Fixed filter function naming
+
+Changelog 0.2.6:
+Fixed Trakt Sync prompting if trakt not authorised
+
+Changelog 0.2.5:
+Fixed issue with clean_title not applying to old version of function
+
+Changelog 0.2.4:
+Added ability to delay Trakt Sync
+Added notice for Initial Trakt Sync with warning about delaying
+Added further information to the Trakt Sync background progress dialog
+Increased item filtering accuracy
+Improvements to Premiumize torrent link identification
+
+Changelog 0.2.3:
+Removed unused show thread for TVDB modoule episodeIDToListItem
+Rework of 24 hour release delay setting
+Fixed issue with some seasons not showing episodes
+Hoster scrape threads exit more gracefully now
+
+Changelog 0.2.2:
+Maintenance cycle timeout reduced to 15 minutes
+Reduced concurrent tasks for background trakt syncs
+Added more fallbacks for menus with items that can't be built
+
+Changelog 0.2.1:
+Fixed issue if Kodi meta was unable to be filled for mixed episode list record
+
+Changelog 0.2.0:
+Added removal of None items for next up list.
+
+Changelog 0.1.50:
+Fixed UnWatchedEpisodes list item property for seasons
+
+Changelog 0.1.49:
+Fixed Movie Collection Sorting
+Fixed shows get_season_episodes falling back to episode update
+
+Changelog 0.1.48:
+Fixed Marking As Watched not updating local trakt records
+Meta requests now run in a queue to throttle thread creation
+Fixed season_count not being checked in local trakt database
+Added more info label cleanups
+Added TotalSeasons to item properties
+Fixed spelling of UnWatchedEpisodes item property
+
+Changelog 0.1.47:
+Removed thread stack size changes (possibly causing Kodi crashes)
+
+Changelog 0.1.46:
+Fixed Movies not correctly marked as watched
+Movies Collection now pulled from local database instead of Trakt call
+
+Changelog 0.1.45:
+Added Years menu item to shows
+Added Background Task Style scrape display option
+Fixed source utils deaccent function
+Added Re-Build Trakt Datbase menu item
+
+Changelog 0.1.44:
+Trakt Sync Database now integrated
+Duplicate source removal now performed using dictionary of hashes and urls
+Real Debrid cache checks are now threaded to increase cache check speeds
+Fixed Hide SD causing only SD to show
+Torrents from local database now show original provider name
+Fixed temporary provider files not being cleaned up on zip install
+Added new My Files menu, allows browsing and playback of cloud stored files
+Fixed Trakt Bookmarks
+
+Changelog 0.1.43:
+Fixed trakt scrobbling on item start
+Slowest 5 providers now show their names on scraping screen
+Missing season posters now fall back to show poster
+
+Changelog 0.1.42
+Fixed issue with movies creating transfer requests for premiumize users
+Fixed lists throwing error when no liked lists were found
+Fixed watched episodes showing in Next Up
+Fixed issue with trakt scrobbling on item finish
+
+Changelog 0.1.41
+Fixed Fanart pulling items with wrong language
+Fixed Scrobbling (again)
+
+Changelog 0.1.40:
+Fixed My Movies List Menu Item
+Fixed display of individual providers in dialog
+Increased Premiumize movie detection
+Fixed Trakt Scrobbling
+Fixed issue error caused on player skip
+Fixed Search History not showing from main menu search
+Fixed Search History sorting
+Fixed error on torrent sizes if size is 0
+Fixed spelling issue on Movies Years Menu
+
+Changelog 0.1.39:
+Removed duplicate semaphore acquisition which caused large show menus to stall forever
+
+Changelog 0.1.38:
+Provider versions are now shown in the disable/enable windows
+
+Changelog 0.1.37:
+Fixed issue with scraping caused by absolute numbering
+
+Changelog 0.1.36
+Torrent Sources now receive two new keys in the simpleInfo dictionary "isanime, absolute_number"
+absolute_number is the relevant episode number in the series
+Adjust custom providers so installs can be requested from external addons (with user approval)
+Added Hide SD quality option to settings
+TVDB images now filter by language code (statically set to english for the interim)
+Multiple Language String Fixes
+Added fix for Seren scrobbling items twice
+Added ability for providers to override provider display names
+Next Up now filters items if they are the first episode in the series and have previously been completed
+Added Show Networks to Discover TV Shows
+Added Hide Un-Aired Episodes to Settings options
+Added Movie Years to Menu
+Added Networks to TV Shows Menu
+Fixed Real Debrid Cache Assist
+Real Debrid Cache Assist should now properly cache entire season packs
+Fixed issue where providers/__init__.py could be overwritten with malformed provider package
+
+Changelog 0.1.35
+Fixed scrape error caused by missing artwork
+Sources that are not compatible are now hidden from users
+Fixed landscape image issue for episode items
+
+Changelog 0.1.34
+Fanart now also supplies landscape images
+Workaround put in place for issue where trakt would supply multiples of a show season
+Fixed issue where episodes would show as None if not released
+Fixed Most Collected sorting by title
+
+Changelog 0.1.33
+Fixed RD resolving errors
+Fanart.tv module now only applies clear art and clear logo to movies and
+Fixed Source Select not selecting files
+
+Changelog 0.1.32
+Decreased TVDB semaphore limit
+Fixed Trakt list sorting with titles that start with the word 'The'
+Added support for RealDebrid API changes
+Began work on console mode
+Added multiple meta labels for movie items
+Added possible workaround for UTC to local timezone conversion
+Movie filter now supports years surrounded in []
+Added Fanart Support
+Fixed Search history order
+Limited Next Up show amount to 200 most recently watched titles
+Fixed error caused from Auto Episode Resume and Kodi 18 widget workaround
+Added better resolve support for movies in premiumize module
+Added workaround for long cache check urls with Real Debrid
+Fixed issue were items were incorrectly marked as watched with Trakt
+Re-designed Source Select window
+Added support for package developers to use github archives to push updates
+Added IMDB variable to torernt provider modules (Package devs please update to include this new variable, as support for modules without it will be dropped in the near future)
+Added Ratings for movie items
+
+Changelog 0.1.31
+Added Sort and Filter for low quality items
+Re-order Settings Menu
+
+Changelog 0.1.30
+Fixed Finish Watching sort order
+Increased Hoster Support
+Added Search History option
+Premiumize module now uses direct download to resolve torrent files
+
+Changelog 0.1.29
+Reverted changes to mixed episode lists
+Added option to disable title overwrites for episode lists
+
+Changelog 0.1.28
+Added try except in zfile module to handle if file is already in byte form
+
+Changelog 0.1.27
+Added delay to setViewType call
+Added setting to disable setting viewTypes with Seren
+Removed idle, closeAllDialogs, added closeOkDialog, added closeBusyDialog
+Removed busy dialog stalling after failure to find sources
+
+Changelog 0.1.26
+Increased keep-alive ticks to prevent pre-scrape occuring to early
+Reduced busy dialog occurance on failure to scrape
+Fixed provider install issue with zipfiles
+
+Changelog 0.1.25
+Fixed setSetting argument naming (Fixes pre-emptive scraping)
+Trakt lists sorting now ignores 'The '
+Removed title appends to follow more closely to Kodi standards, another method of showing play percentage must be met
+Fixed Trakt dates for episode items
+Added Studio to metadata
+Seren now appends next season to current playlist during playback instead of after
+Removed references to now defunct OMNIConnect Addon
+Added Re-scrape cm item to episode items
+Fixed and optimised list pagination
+Trakt Lists now use user slugs to support users with periods in their username
+Added ability to direct search through plugin url
+Confirmed Trakt list sorting for all types except excluded (popularity, percentage, my rating)
+Added support to fail resolve if file ends with .rar
+Release titles are now deaccented and encoded with utf-8 to prevent unicode errors
+Fixed Ghost providers occuring if a provider was no longer available in a updated version of a provider package.
+Fixed TVDB module creating an artwork URL if no artwork is available
+Added token refresh lock to the TVDB module to stop instances of the class spawning mass refresh requests
+Massively reduced chance Kodi will drop Seren's settings
+Fixed Real Debrid post request making a get request after token refresh
+Custom Provider module now uses Zfile module to accomodate zipfile module bug on Android devices
+
+		</news>
+	</extension>
+</addon>
+
 <addon id="script.module.TheYid.common"
 	     name="TheYid's common stuff"
 	     version="0.1.2"
@@ -1136,7 +1405,26 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.32" provider-name="tvaddons">
+<addon id="plugin.video.wonderfulsubs" name="WonderfulSubs : Anime Subs &amp; Dubs" provider-name="DxCx" version="0.0.9">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.beautifulsoup4" version="4.5.3" />
+    <import addon="script.common.plugin.cache" version="2.5.5" />
+    <import addon="script.module.inputstreamhelper" version="0.3.3" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">WonderfulSubs : Anime Subs &amp; Dubs</summary>
+    <description lang="en">HD Animes</description>
+    <source>https://github.com/DxCx/plugin.video.wonderfulsubs</source>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.33" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
